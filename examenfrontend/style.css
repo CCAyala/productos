@@ -1,5 +1,5 @@
 body {
-    background-color: #988b8b;
+    background-color: #d8cece;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -10,4 +10,18 @@ body {
     font-size: large;
 
 
+  }
+
+  .container1{
+    background-color: rgb(161, 153, 153);
+    margin-right: auto;
+    margin-left: auto;
+    padding: auto;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+
+  .table hidden{
+    margin-right: 60px;
   }

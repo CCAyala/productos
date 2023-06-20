@@ -1,10 +1,10 @@
 $(document).ready(function(){
     // solicitud para listar 
-
+    let tabla= document.querySelector('#tabla')
     $('#listar').on('click', function(){
         event.preventDefault();
 
-        let tabla= document.querySelector('#tabla')
+        
         tabla.innerHTML=''
         $.ajax({
 
@@ -13,7 +13,7 @@ $(document).ready(function(){
             dataType: "JSON",
             success: function(entrada){
                 tabla.innerHTML ='';
-                for(i=0; i< entrada.length;i++){
+                for(let i=0; i< entrada.length;i++){
                     tabla.innerHTML += '<tr><td>'+ entrada[i].referencia+
                     '</td><td>'+ entrada[i].nombre+
                     '</td><td>'+ entrada[i].categoria+
@@ -24,6 +24,7 @@ $(document).ready(function(){
                     '</td><tr>';
                     
                 }
+                tabla.classList.remove('hidden')
             },
             error:function(xhr,textStatus,errorThrown){
               console.log("error",errorThrown);

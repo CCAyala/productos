@@ -17,7 +17,14 @@ public class producto_service {
 
     public producto_service() {
 
-        productos.add(new producto(1, "papa", "verdura", 1.500f, 20));
+        productos.add(new producto(1, "papa", "verdura", 1500f, 20));
+        productos.add(new producto(2, "frijol verde", "verdura", 1100f, 40));
+        productos.add(new producto(3, "banano", "fruta", 900f, 10));
+        productos.add(new producto(4, "papaya", "fruta", 2100f, 2));
+        productos.add(new producto(5, "Arroz doria Por 500gr", "grano", 1500f, 20));
+        productos.add(new producto(6, "pasta doria 250gr ", "grano", 1500f, 40));
+        productos.add(new producto(7, "durazno", "fruta", 1500f, 5));
+        productos.add(new producto(8, "pitaya", "fruta", 3000f, 20));
         productos.get(0).aplicarDescuento();
     }
 
